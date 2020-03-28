@@ -1,0 +1,14 @@
+{
+  "name": "cluster",
+  "children": [
+    {"name": "AgglomerativeCluster", "size": 7074, "color": "#e6e6e6",
+      "link": "#EF1A10"
+    },
+    {"name": "CommunityStructure", "size": 7074, "color": "#e6e6e6",
+      "link": "#69e73d"},
+    {"name": "HierarchicalCluster", "size": 7074, "color": "#e6e6e6",
+      "link": "#e6e6e6"},
+    {"name": "MergeEdge", "size": 7074, "color": "#EFEA32",
+      "link": "#000000"}
+  ]
+}
