@@ -2,13 +2,14 @@
   "name": "cluster",
   "children": [
     {"name": "AgglomerativeCluster", "size": 7074, "color": "#e6e6e6",
-      "link": "#EF1A10"
+      "link": "#aaaaaa",
+      "opacity": "0.5"
     },
     {"name": "CommunityStructure", "size": 7074, "color": "#e6e6e6",
-      "link": "#69e73d"},
+      "link": "#69e73d", "opacity": "0.5"},
     {"name": "HierarchicalCluster", "size": 7074, "color": "#e6e6e6",
-      "link": "#e6e6e6"},
+      "link": "#e6e6e6", "opacity": "0.5"},
     {"name": "MergeEdge", "size": 7074, "color": "#EFEA32",
-      "link": "#000000"}
+      "link": "#000000", "opacity": "0.5"}
   ]
 }
