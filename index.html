@@ -4,20 +4,12 @@
 
     .node circle {
         cursor: pointer;
-        stroke: #3182bd;
-        stroke-width: 1.5px;
     }
 
     .node text {
         font: 10px sans-serif;
         pointer-events: none;
         text-anchor: middle;
-    }
-
-    .linkColor {
-        fill: none;
-        stroke: #34e13b;
-        stroke-width: 3px;
     }
 
 </style>
@@ -67,7 +59,8 @@
 
         link.enter().insert("line", ".node")
              .attr("stroke", function(d) { return d.target.link; })
-             .attr("stroke-width", "3px");
+             .attr("stroke-width", "3px")
+            .attr("opacity", function(d) { return d.target.opacity });
 
         // Update nodes.
         node = node.data(nodes, function(d) { return d.id; });
@@ -101,17 +94,6 @@
 
         node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
     }
-
-    /*function color(d) {
-        return d._children ? "#3182bd" // collapsed package
-             : d.children ? "#ef1a19" // expanded package
-                 : d.color; // leaf node
-    }*/
-
-    /*function linkColor(d) {
-        debugger;
-        return;// leaf node
-    }*/
 
     // Toggle children on click.
     function click(d) {
